@@ -1,0 +1,24 @@
+Algoritmo sin_titulo
+    Definir hrs, sueldo Como Entero;
+    Escribir "ingrese las horas trabajadas";
+    Leer hrs;
+    Escribir "ingrese el sueldo base";
+    Leer sueldo;
+    si (hrs <= 35) Entonces;
+        Escribir "el sueldo es de: ", sueldo;
+    SiNo
+        si (hrs > 35) Entonces;
+            multiplicar <- sueldo * 2;
+            restar <- hrs - 35;
+            multiplicar2 <- multiplicar * restar;
+            sumar <- sueldo + multiplicar2;
+            Escribir "el sueldo es de: ", sumar;
+        SiNo
+            si (hrs > 45) Entonces;
+                multiplicar <- sueldo * 3;
+                restar <- hrs - 45;
+                multiplicar2 <- multiplicar * restar;
+                sumar <- sueldo + multiplicar2;
+            FinSi
+        FinSi
+    FinSi

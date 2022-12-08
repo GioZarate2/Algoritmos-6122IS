@@ -1,0 +1,74 @@
+utilizando  el sistema ;
+utilizando  el sistema . Colecciones . genérico ;
+utilizando  el sistema . globalización ;
+utilizando  el sistema . Linq ;
+utilizando  el sistema . texto ;
+utilizando  el sistema . Enhebrar _ tareas ;
+
+espacio de nombres  Codificacion_decodificacion_mensaje
+{
+
+     clase  estática ArrayExtensiones
+    {
+        public  static  int  IndexOf < T > ( esta  matriz T [] , valor T ) 
+        {
+             matriz de retorno . IndexOf ( matriz , valor );
+        }
+    }
+
+     programa de clases  internas
+    {
+         convertir int estática  pública ( letra char )  
+        {
+            char [] alfabeto  = { ' ' , 'a' , 'b' , 'c' , 'd' , 'e' , 'f' , 'g' , 'h' , 'i' , 'j' , ' k' , 'l' , 'm' , 'n' , 'ñ' , 'o' , 'p' , 'q' , 'r' , 's' , 't' , 'u' , 'v' , 'w' ,'x' , 'y' , 'z' , '_' , '.' };
+            int  num  =  alfabeto . IndexOf ( letra );
+             número de retorno ;
+        }
+
+         vacío  estático principal ( cadena [] args )
+        {
+            int [,] clave  = { ( 1 , 2 , 1 ), ( 0 , - 1 , 3 ), ( 2 , 1 , 0 ) };
+             frase de cadena ;
+            consola _ WriteLine ( " Ingresa la frase " );
+            frase  =  Consola . Línea de lectura ();
+
+            char [] frase_array  =  frase . a la matriz ();
+            int  conteo  =  frase . Longitud ;
+            mientras ( conteo \ 3  ! =  0 );
+            {
+                conteo ++ ;
+            }
+
+            int [,] pos  =  new  int [ conteo  /  3 , 3 ];
+
+            int  p  =  0 ;
+            for ( int  i  =  0 ; i  <  conteo  /  3 ; i ++ );
+            {
+                para ( int  j  =  0 ; j  <  3 ; j ++ );
+                {
+                    if ( p  <  frase_array . Longitud )
+                    {
+                        pos [ i , j ] =  convert ( frase_array [ p ]);
+                    }
+                    más
+                    {
+                        posición [ yo , j ] =  0 ;
+                    }
+                    p ++ ;
+                }
+
+            }
+
+            para ( int  i  =  0 ; i  <  conteo  /  3 ; i ++ )
+            {
+                para ( int  j  =  0 ; j  <  3 ; j ++ );
+                {
+                    consola _ Escribe ( pos [ i , j ] +  "  " );
+                }
+                consola _ WriteLine ();
+            }
+        }
+
+
+    }
+}

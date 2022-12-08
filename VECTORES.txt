@@ -1,0 +1,54 @@
+utilizando el sistema;
+usando System.Collections.Generic;
+utilizando System.Linq;
+usando Sistema.Texto;
+utilizando System.Threading.Tasks;
+
+espacio de nombres Actividad_algoritmos
+{
+    programa de clases internas
+    {
+        vacío estático principal (cadena [] argumentos)
+        { }
+            int[] valores privados;
+
+
+        public void Cargar()
+        {
+            valores = nuevo int[10];
+            para (int f = 0; f  10; f++) ;
+            {
+                Console.Write(Ingrese el valor de los componentes);
+                Cuerda linea;
+                linea = Consola.ReadLine();
+                valores[10]= int.Parse(linea);
+            }
+        }
+
+        vacío estático principal (cadena [] argumentos)
+        {
+            int opción = 0;
+            hacer
+            {
+                Console.WriteLine(MENÚ DE OPCIONES);
+                Consola.WriteLine(n +
+                    n 1.- Intercambiar los elementos del vector +
+                    n 2.- Averiguar si esta ordenada de menor a mayor +
+                    n 3.- Averiguar si tiene numeros repetidos +
+                    n 4.- Hallar el promedio de los elementos);
+                Console.WriteLine(Seleccione una opción );
+                opción = Convert.ToInt32(Console.ReadLine());
+                interruptor (opción)
+                {
+                    caso 1
+                          
+                    descanso;
+                }
+            } while (opción != 4);
+        
+        }
+    
+         
+        
+    }
+}

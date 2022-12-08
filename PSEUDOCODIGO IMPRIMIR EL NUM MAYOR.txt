@@ -1,0 +1,25 @@
+Algoritmo sin_titulo
+    Definir n1, n2, n3 Como Entero;
+    Escribir "ingrese dato uno";
+    Leer n1
+    Escribir "ingrese dato dos";
+    Leer n2
+    Escribir "ingrese dato tres";
+    Leer n3
+    Mientras n1=n2 o n2=n3 o n3=n1 Hacer
+        Escribir "Favor de ingresar otro dato";
+        Leer n1, n2, n3;
+    FinMientras
+    si (n1 > n2) y (n1 > n3) Entonces;
+        resultado <- n1;
+    SiNo
+        si (n2 > n1) y (n2 > n3) Entonces;
+            resultado <- n2;
+        SiNo
+            si (n3 > n1) y (n3 > n2) Entonces;
+                resultado <- n3;
+            FinSi
+        FinSi
+    FinSi
+    Escribir "el numero mayor es: ", resultado;
+FinAlgoritmo

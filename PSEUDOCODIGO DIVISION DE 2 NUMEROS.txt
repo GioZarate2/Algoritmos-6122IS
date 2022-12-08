@@ -1,0 +1,15 @@
+Algoritmo sin_titulo
+    Definir n1, n2 Como Entero;
+    Escribir "inserte numero uno";
+    Leer n1
+    Escribir "inserte numero dos";
+    Leer n2
+    si n1 > n2 Entonces;
+        dividir <- n1/n2;
+    SiNo
+        Si n2 > n1 Entonces;
+        dividir <- n2/n1;
+    FinSi
+FinSi
+Escribir "el resultado es: ", dividir;
+FinAlgoritmo

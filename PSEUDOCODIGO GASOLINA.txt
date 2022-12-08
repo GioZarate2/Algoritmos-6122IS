@@ -1,0 +1,10 @@
+Algoritmo sin_titulo
+    Definir km, precio_gasolina Como Entero;
+    Escribir "escriba los km recorridos";
+    Leer km;
+    Escribir "escriba el precio de la gasolina por litro"
+    Leer precio_gasolina;
+    consumo <- km / 10;
+    trayectoria <- precio_gasolina * consumo;
+    Escribir "el consumo de la gasolina y el costo de la trayectoria es de: ", consumo, " ", trayectoria;
+FinAlgoritmo

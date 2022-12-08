@@ -1,0 +1,79 @@
+utilizando  el sistema ;
+utilizando  el sistema . Colecciones . genérico ;
+utilizando  el sistema . Linq ;
+utilizando  el sistema . texto ;
+utilizando  el sistema . Enhebrar _ tareas ;
+
+espacio de nombres  Código_Calificaciones_CGZR
+{
+     programa de clases  publicas
+    {
+         vacío  estático principal ( cadena [] args )
+        {
+            // Mayormente se declaran las variables al principio del programa
+            float  firmasMax , firmasObtenidas , ser , adaptabilidad , extracurricular , calificacionFinal , porcentajeObtenido , puntos , saber , hacer ;
+            calificacionFinal  =  0 ; // Inicialización de calificación final
+            consola _ WriteLine ( " Ingrese numero de firmas maximo: " );
+            firmasMax  =  float . Analizar ( Consola . ReadLine ());
+            consola _ WriteLine ( " \n Ingrese numero de firmas del alumno " );
+            firmasObtenidas  =  float . Analizar ( Consola . ReadLine ());
+
+            if ( firmasObtenidas  >= ( firmasMax  *  . 80 )) // Condicional para saber si las firmas con mayorigual a las firmas maximas
+            {
+                // Saber o examen
+                consola _ WriteLine ( " \n Ingrese puntaje obtenido de examen: \n " );
+                puntos  =  int . Analizar ( Consola . ReadLine ()); // Conversion a entero en la misma linea de lectura
+                consola _ WriteLine ( " Ingrese porcentaje obtenido de examen: \n " );
+                porcentajeObtenido  =  float . Analizar ( Consola . ReadLine ());
+                saber  =  Calculadora ( puntos , porcentajeObtenido , 40 );
+                calificacionFinal  +=  porcentajeObtenido ; // Concatena el valor de una variable a otra(suma)
+            }
+            else // Si no cumple con el condicional
+            {
+                sable  =  0 ;
+                consola _ WriteLine ( " Número de firmas mínimas no alcanzado, por lo tanto no tiene calificación de examen " );
+            }
+
+            // Lamado de funciones y asignacion a una variable dependiendo del valor devuelto
+            // Calcular hacer
+            consola _ WriteLine ( " \n Ingrese puntaje obtenido de hacer: " );
+            puntos  =  flotador . Analizar ( Consola . ReadLine ()); // Conversion a entero en la misma linea de lectura
+            consola _ WriteLine ( " \n Ingrese porcentaje obtenido de hacer: " );
+            porcentajeObtenido  =  float . Analizar ( Consola . ReadLine ());
+            hacer  =  Calculadora ( puntos , porcentajeObtenido , 40 ); // Se mandan en los parametros de la funcion los valores, pueden ser directamente escritos o ponerles las variables siempre y cuando coincidan con el tipo de dato
+            calificacionFinal  +=  porcentajeObtenido ;
+            // Calcular ser
+            consola _ WriteLine ( " \n Ingrese puntaje obtenido de ser: " );
+            puntos  =  flotador . Analizar ( Consola . ReadLine ());
+            consola _ WriteLine ( " \n Ingrese porcentaje obtenido de ser: " );
+            porcentajeObtenido  =  float . Analizar ( Consola . ReadLine ());
+            ser  =  Calculadora ( puntos , porcentaje Obtenido , 5 );
+            calificacionFinal  +=  porcentajeObtenido ;
+            // Calcular adaptabilidad
+            consola _ WriteLine ( " \n Ingrese puntaje obtenido de adaptabilidad: " );
+            puntos  =  flotador . Analizar ( Consola . ReadLine ()); // Conversion a entero en la misma linea de lectura
+            consola _ WriteLine ( " \n Ingrese porcentaje obtenido de adaptabilidad: " );
+            porcentajeObtenido  =  float . Analizar ( Consola . ReadLine ());
+            adaptabilidad  =  Calculadora ( puntos , porcentajeObtenido , 5 );
+            calificacionFinal  +=  porcentajeObtenido ;
+            // Extracuricular
+            consola _ WriteLine ( " \n Ingrese porcentaje obtenido de extracurricular: " );
+            extracurricular  =  flotar . Analizar ( Consola . ReadLine ());
+            calificacionFinal  +=  extracurricular ;
+            // Calificación obtenida
+            consola _ WriteLine ( " \n Calificacion saber del alumno es: "  +  saber );
+            consola _ WriteLine ( " \n Calificacion hacer del alumno es: "  +  hacer );
+            consola _ WriteLine ( " \n Calificacion ser del alumno es: "  +  ser );
+            consola _ WriteLine ( " \n Calificacion adaptabilidad del alumno es: "  +  adaptabilidad );
+            consola _ WriteLine ( " \n Calificacion extracurricular del alumno es: "  +  extracurricular );
+            consola _ WriteLine ( " \n La calificación del alumno es: "  +  calificaciónFinal  /  10 );
+
+        }
+
+        public  static  float  Calculadora ( float  puntos , float  porcentajeObtenido , float  porcentaje )
+        {
+            float  porcentajeFinal  = ( porcentajeObtenido  *  puntos ) /  porcentaje ;
+            retorno  porcentajeFinal ;
+        }
+    }
+}

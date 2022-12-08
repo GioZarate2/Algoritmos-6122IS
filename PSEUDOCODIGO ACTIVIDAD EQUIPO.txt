@@ -1,0 +1,45 @@
+ Definir opc,a,b,resultado como real
+    opc = 10
+    resultado = 0
+    Mientras opc <> 0 Hacer
+        Escribir "Escribe un numero"
+        leer un
+        Escribir "Escribe un numero"
+        leer b
+        Escribe ""
+        Escribir "1 = Suma"
+        Escribir "2 = Resto"
+        Escribir "3 = Multiplicacion"
+        Escribir "4 = División"
+        Escribir "5 = Potencia"
+        Escribir "Salir con otro numero"
+        Escribe ""
+        Escribir "Elige una opcion"
+        leer opc;
+        Segun opc Hacer
+            
+            1: resultado = a+b
+                
+                Escribir "La suma de ",a," + ",b," = ",resultado;
+                
+            2: resultado = ab
+                Escribir "La resta de ",a," ? ",b," = ",resultado;
+                
+            3: resultado = a*b
+                
+                Escribir "La multiplicacion de ",a," x ",b," = ",resultado;
+                
+            4: resultado = a/b
+                
+                Escribir "La división de ",a," / ",b," = ",resultado;
+                
+            5: resultado = a^b
+                
+                Escribir "El numero", a, "elevado a la potencia", b, "es", resultado;
+                
+            De Otro Modo:
+                Escribir "Sistema finalizado»"
+                
+        FinSegún
+    FinMientras
+finalgoritmo

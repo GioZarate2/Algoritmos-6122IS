@@ -1,0 +1,11 @@
+Algoritmo sin_titulo
+    Escribir "ingrese un valor"
+    leer n
+    suma = 0
+    contador = 1
+    Mientras contador <= n Hacer
+        suma = suma + contador
+        contador= contador + 1
+    FinMientras
+    Escribir suma
+FinAlgoritmo
